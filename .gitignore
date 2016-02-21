@@ -1,0 +1,11 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+_builds/
+_cache/
+_projects/
+_steps/
+_temp/
+node_modules/
+thumbs/

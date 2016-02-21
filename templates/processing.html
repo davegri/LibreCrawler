@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="/static/jquery.js"></script>
+<script>
+    function ajaxCallback(data) {
+        if (data.done)
+            window.location.replace("http://YOUR_GENERATED_PAGE_URL");
+        else
+            window.setTimeout(function() {
+                $.getJSON('{{ url_for('is_done') }}', {id: {{ id }} }, ajaxCallback);
+            }, 3000);
+    }
+    $(document).ready(function(){
+        ajaxCallback({done=false});
+    });
+</script>
+</head>
+<body>
+    Processing...
+    {{ out }}
+    <a href="{{ url_for('kill', id=id) }}">click me</a>
+</body></html>
