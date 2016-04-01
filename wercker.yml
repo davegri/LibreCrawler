@@ -6,7 +6,7 @@ build:
   steps:
     - script:
       name: generate artefact
-      code: echo "artefact" > $WERCKER_REPORT_ARTIFACTS_DIR/artefact.txt
+      code: echo "artefact SSS" > $WERCKER_REPORT_ARTIFACTS_DIR/artefact.txt
     - pip-install
 
 deploy:
