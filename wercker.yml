@@ -4,6 +4,9 @@ box: python:latest
 build:
   # The steps that will be executed on build
   steps:
+    - script:
+      name: generate artefact
+      code: echo "artefact" > $WERCKER_REPORT_ARTIFACTS_DIR/artefact.txt
     - pip-install
 
 deploy:
