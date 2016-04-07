@@ -11,7 +11,7 @@ build:
 
 deploy:
   steps:
-    - pip-install step
+    - pip-install 
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
