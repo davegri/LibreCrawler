@@ -2,10 +2,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-_builds/
-_cache/
-_projects/
-_steps/
-_temp/
+.wercker/
 node_modules/
 thumbs/
